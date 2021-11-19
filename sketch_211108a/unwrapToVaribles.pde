@@ -14,8 +14,10 @@ void currentAlberta() {
   JSONObject mainWeatherAlberta = jsonCurrentAlberta.getJSONObject("main");
   float temp = mainWeatherAlberta.getFloat("temp");
   println("2. Current Alberta Weather", temp);
-  JSONArray currentAlbertaWeathe = jsonCurrentAlberta.getJSONArray ("Weather")
-  JSONObject allAlbeta = currentAlbertaWather.getJSONObject("0")
-  String currentAlberta.getString("main")
-  printlin(albertaID, albertaMain)
+  
+  JSONArray currentAlbertaWeather = jsonCurrentAlberta.getJSONArray("weather"); //Square Bracket
+  JSONObject allAlberta = currentAlbertaWeather.getJSONObject(0);
+  int albertaID = allAlberta.getInt("id");
+  String albertaMain = allAlberta.getString("main");
+  println("3. Verifying Alberta ID and Main Variables:", albertaID, albertaMain);
 }//End currentAlberta()
