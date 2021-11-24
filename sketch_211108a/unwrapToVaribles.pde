@@ -1,23 +1,22 @@
-void unwrapToVariables() {
+int i=1; //for println numbering
+
+void unwrapToVariables()
+{
   //Note: need to unwrap all JSON Objects, see API Call
-  currentAlberta();
-  //forecastAlberta();
-  //currentEdmonton();
-  //forecastEdmonton();
-  //currentCalgary();
-  //forecastCalgary();
-  //currentRedDeer();
-  //forecastRedDeer();
+  currentDamascus();
+
 }//End unwrapToVariables()
 //
-void currentAlberta() {
-  JSONObject mainWeatherAlberta = jsonCurrentAlberta.getJSONObject("main");
-  float temp = mainWeatherAlberta.getFloat("temp");
-  println("2. Current Alberta Weather", temp);
+void currentDamascus()
+{
+  println("Verifying Variable Population"); //Verifying Variable Population by Server
+  JSONObject mainWeatherDamascus = jsonCurrentDamascus.getJSONObject("main");
+  float temp = mainWeatherDamascus.getFloat("temp");
+  println(i++ + ". Current Damascus Weather", temp);
   
-  JSONArray currentAlbertaWeather = jsonCurrentAlberta.getJSONArray("weather"); //Square Bracket
-  JSONObject allAlberta = currentAlbertaWeather.getJSONObject(0);
-  int albertaID = allAlberta.getInt("id");
-  String albertaMain = allAlberta.getString("main");
-  println("3. Verifying Alberta ID and Main Variables:", albertaID, albertaMain);
+  JSONArray currentDamascusWeather = jsonCurrentDamascus.getJSONArray("weather"); //Square Bracket
+  JSONObject Damascus = currentDamascusWeather.getJSONObject(0);
+  int DamascusID = allDamascus.getInt("id");
+  String DamascusMain = allDamascus.getString("main");
+  println(i++ + ". Verifying Damascus ID and Main Variables:", DamascusID, DamascusMain);
 }//End currentAlberta()
