@@ -1,0 +1,29 @@
+{
+        "id": 170654,
+        "name": "Damascus",
+        "state": "",
+        "country": "SY",
+        "coord": {
+            "lon": 36.291279,
+            "lat": 33.510201
+        }
+
+{
+        "id": 934841,
+        "name": "Eswatini",
+        "state": "",
+        "country": "SZ",
+        "coord": {
+            "lon": 31.5,
+            "lat": -26.5
+        }
+
+{
+        "id": 292224,
+        "name": "Dubai",
+        "state": "",
+        "country": "AE",
+        "coord": {
+            "lon": 55.333328,
+            "lat": 25.0
+        }
